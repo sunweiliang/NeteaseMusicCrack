@@ -43,6 +43,8 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 - iOS逆向实践，不可使用于商业和个人其他意图。一切问题均由个人承担，与本人无关。
 - 感谢MonkeyDev的作者庆总。
 - 如内容对您的权利造成了影响，请[issues](https://github.com/sunweiliang/NeteaseMusicCrack/issues), 我会在第一时间进行删除。
+- 最后，希望大家可以多多支持网易云。
+
 
 ## 思路分析
 
