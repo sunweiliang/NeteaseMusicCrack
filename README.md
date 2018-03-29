@@ -65,7 +65,7 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 
 ## 华丽的分割线
 
-点右上角的 Start 可以领红包，不信你试试︿(￣︶￣)︿。
+点右上角的 Star 可以领红包，不信你试试︿(￣︶￣)︿。
 
 
 
