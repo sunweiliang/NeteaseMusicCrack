@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7386943C204E911C00A248EB /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7386943B204E911C00A248EB /* MethodTraceConfig.plist */; };
+		7386943F204E911C00A248EB /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 7386943E204E911C00A248EB /* put ipa or app here */; };
+		73869449204E911D00A248EB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73869448204E911D00A248EB /* JavaScriptCore.framework */; };
+		7386944B204E911D00A248EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7386944A204E911D00A248EB /* Foundation.framework */; };
+		7386944D204E911D00A248EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7386944C204E911D00A248EB /* UIKit.framework */; };
+		73869451204E911D00A248EB /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 73869450204E911D00A248EB /* ANYMethodLog.h */; };
+		73869453204E911D00A248EB /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 73869452204E911D00A248EB /* ANYMethodLog.m */; };
+		73869455204E911D00A248EB /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 73869454204E911D00A248EB /* MethodTrace.h */; };
+		73869457204E911D00A248EB /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 73869456204E911D00A248EB /* MethodTrace.m */; };
+		7386945C204E911D00A248EB /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 7386945B204E911D00A248EB /* AntiAntiDebug.m */; };
+		7386945F204E911D00A248EB /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 7386945E204E911D00A248EB /* fishhook.c */; };
+		73869461204E911D00A248EB /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 73869460204E911D00A248EB /* fishhook.h */; };
+		73869464204E911D00A248EB /* WYMusicDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73869463204E911D00A248EB /* WYMusicDylib.mm */; };
+		73869466204E911D00A248EB /* WYMusicDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 73869465204E911D00A248EB /* WYMusicDylib.h */; };
+		73869468204E911D00A248EB /* WYMusicDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 73869467204E911D00A248EB /* WYMusicDylib.m */; };
+		73869475204E91A900A248EB /* SWLTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 73869473204E91A900A248EB /* SWLTools.h */; };
+		73869476204E91A900A248EB /* SWLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 73869474204E91A900A248EB /* SWLTools.m */; };
+		73869478204E91C300A248EB /* tweak.h in Headers */ = {isa = PBXBuildFile; fileRef = 73869477204E91C300A248EB /* tweak.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73869471204E912D00A248EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7386942D204E911C00A248EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73869445204E911D00A248EB;
+			remoteInfo = WYMusicDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73869435204E911C00A248EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		73869438204E911C00A248EB /* WYMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7386943B204E911C00A248EB /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		7386943E204E911C00A248EB /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		73869440204E911C00A248EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73869446204E911D00A248EB /* libWYMusicDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWYMusicDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		73869448204E911D00A248EB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7386944A204E911D00A248EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7386944C204E911D00A248EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		73869450204E911D00A248EB /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		73869452204E911D00A248EB /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		73869454204E911D00A248EB /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		73869456204E911D00A248EB /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		73869459204E911D00A248EB /* WYMusicDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYMusicDylib-Prefix.pch"; sourceTree = "<group>"; };
+		7386945B204E911D00A248EB /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		7386945E204E911D00A248EB /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		73869460204E911D00A248EB /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		73869462204E911D00A248EB /* WYMusicDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WYMusicDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		73869463204E911D00A248EB /* WYMusicDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WYMusicDylib.mm; sourceTree = "<group>"; };
+		73869465204E911D00A248EB /* WYMusicDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYMusicDylib.h; sourceTree = "<group>"; };
+		73869467204E911D00A248EB /* WYMusicDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYMusicDylib.m; sourceTree = "<group>"; };
+		73869473204E91A900A248EB /* SWLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLTools.h; sourceTree = "<group>"; };
+		73869474204E91A900A248EB /* SWLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLTools.m; sourceTree = "<group>"; };
+		73869477204E91C300A248EB /* tweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tweak.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73869432204E911C00A248EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73869443204E911D00A248EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73869449204E911D00A248EB /* JavaScriptCore.framework in Frameworks */,
+				7386944D204E911D00A248EB /* UIKit.framework in Frameworks */,
+				7386944B204E911D00A248EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7386942C204E911C00A248EB = {
+			isa = PBXGroup;
+			children = (
+				7386943A204E911C00A248EB /* WYMusic */,
+				7386944E204E911D00A248EB /* WYMusicDylib */,
+				73869447204E911D00A248EB /* Frameworks */,
+				73869439204E911C00A248EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73869439204E911C00A248EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73869438204E911C00A248EB /* WYMusic.app */,
+				73869446204E911D00A248EB /* libWYMusicDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7386943A204E911C00A248EB /* WYMusic */ = {
+			isa = PBXGroup;
+			children = (
+				7386943B204E911C00A248EB /* MethodTraceConfig.plist */,
+				73869440204E911C00A248EB /* Info.plist */,
+				7386943D204E911C00A248EB /* TargetApp */,
+			);
+			path = WYMusic;
+			sourceTree = "<group>";
+		};
+		7386943D204E911C00A248EB /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				7386943E204E911C00A248EB /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		73869447204E911D00A248EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73869448204E911D00A248EB /* JavaScriptCore.framework */,
+				7386944A204E911D00A248EB /* Foundation.framework */,
+				7386944C204E911D00A248EB /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7386944E204E911D00A248EB /* WYMusicDylib */ = {
+			isa = PBXGroup;
+			children = (
+				73869477204E91C300A248EB /* tweak.h */,
+				73869473204E91A900A248EB /* SWLTools.h */,
+				73869474204E91A900A248EB /* SWLTools.m */,
+				73869462204E911D00A248EB /* WYMusicDylib.xm */,
+				73869463204E911D00A248EB /* WYMusicDylib.mm */,
+				73869465204E911D00A248EB /* WYMusicDylib.h */,
+				73869467204E911D00A248EB /* WYMusicDylib.m */,
+				7386944F204E911D00A248EB /* MethodTrace */,
+				7386945A204E911D00A248EB /* AntiAntiDebug */,
+				7386945D204E911D00A248EB /* fishhook */,
+				73869458204E911D00A248EB /* Supporting Files */,
+			);
+			path = WYMusicDylib;
+			sourceTree = "<group>";
+		};
+		7386944F204E911D00A248EB /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				73869450204E911D00A248EB /* ANYMethodLog.h */,
+				73869452204E911D00A248EB /* ANYMethodLog.m */,
+				73869454204E911D00A248EB /* MethodTrace.h */,
+				73869456204E911D00A248EB /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		73869458204E911D00A248EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73869459204E911D00A248EB /* WYMusicDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7386945A204E911D00A248EB /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				7386945B204E911D00A248EB /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		7386945D204E911D00A248EB /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				7386945E204E911D00A248EB /* fishhook.c */,
+				73869460204E911D00A248EB /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73869444204E911D00A248EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73869451204E911D00A248EB /* ANYMethodLog.h in Headers */,
+				73869466204E911D00A248EB /* WYMusicDylib.h in Headers */,
+				73869455204E911D00A248EB /* MethodTrace.h in Headers */,
+				73869478204E91C300A248EB /* tweak.h in Headers */,
+				73869461204E911D00A248EB /* fishhook.h in Headers */,
+				73869475204E91A900A248EB /* SWLTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73869437204E911C00A248EB /* WYMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7386946B204E911D00A248EB /* Build configuration list for PBXNativeTarget "WYMusic" */;
+			buildPhases = (
+				73869431204E911C00A248EB /* Sources */,
+				73869432204E911C00A248EB /* Frameworks */,
+				73869433204E911C00A248EB /* ShellScript */,
+				73869434204E911C00A248EB /* Resources */,
+				73869435204E911C00A248EB /* CopyFiles */,
+				73869436204E911C00A248EB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73869472204E912D00A248EB /* PBXTargetDependency */,
+			);
+			name = WYMusic;
+			productName = WYMusic;
+			productReference = 73869438204E911C00A248EB /* WYMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73869445204E911D00A248EB /* WYMusicDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7386946E204E911D00A248EB /* Build configuration list for PBXNativeTarget "WYMusicDylib" */;
+			buildPhases = (
+				73869441204E911D00A248EB /* ShellScript */,
+				73869442204E911D00A248EB /* Sources */,
+				73869443204E911D00A248EB /* Frameworks */,
+				73869444204E911D00A248EB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYMusicDylib;
+			productName = WYMusicDylib;
+			productReference = 73869446204E911D00A248EB /* libWYMusicDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7386942D204E911C00A248EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = weiliang.sun;
+				TargetAttributes = {
+					73869437204E911C00A248EB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K8WXJENZKT;
+						ProvisioningStyle = Automatic;
+					};
+					73869445204E911D00A248EB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K8WXJENZKT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 73869430204E911C00A248EB /* Build configuration list for PBXProject "WYMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7386942C204E911C00A248EB;
+			productRefGroup = 73869439204E911C00A248EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73869437204E911C00A248EB /* WYMusic */,
+				73869445204E911D00A248EB /* WYMusicDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73869434204E911C00A248EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7386943F204E911C00A248EB /* put ipa or app here in Resources */,
+				7386943C204E911C00A248EB /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73869433204E911C00A248EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		73869436204E911C00A248EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		73869441204E911D00A248EB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73869431204E911C00A248EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73869442204E911D00A248EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73869476204E91A900A248EB /* SWLTools.m in Sources */,
+				73869468204E911D00A248EB /* WYMusicDylib.m in Sources */,
+				7386945C204E911D00A248EB /* AntiAntiDebug.m in Sources */,
+				73869464204E911D00A248EB /* WYMusicDylib.mm in Sources */,
+				73869457204E911D00A248EB /* MethodTrace.m in Sources */,
+				7386945F204E911D00A248EB /* fishhook.c in Sources */,
+				73869453204E911D00A248EB /* ANYMethodLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73869472204E912D00A248EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73869445204E911D00A248EB /* WYMusicDylib */;
+			targetProxy = 73869471204E912D00A248EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73869469204E911D00A248EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7386946A204E911D00A248EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7386946C204E911D00A248EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WYMusic/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.cloudmusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7386946D204E911D00A248EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WYMusic/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.cloudmusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7386946F204E911D00A248EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WYMusicDylib/WYMusicDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWYMusicDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WYMusicDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+					"-framework",
+					Cycript,
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		73869470204E911D00A248EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = K8WXJENZKT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WYMusicDylib/WYMusicDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWYMusicDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WYMusicDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73869430204E911C00A248EB /* Build configuration list for PBXProject "WYMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73869469204E911D00A248EB /* Debug */,
+				7386946A204E911D00A248EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7386946B204E911D00A248EB /* Build configuration list for PBXNativeTarget "WYMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7386946C204E911D00A248EB /* Debug */,
+				7386946D204E911D00A248EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7386946E204E911D00A248EB /* Build configuration list for PBXNativeTarget "WYMusicDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7386946F204E911D00A248EB /* Debug */,
+				73869470204E911D00A248EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7386942D204E911C00A248EB /* Project object */;
+}

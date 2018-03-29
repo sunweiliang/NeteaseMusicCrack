@@ -1,0 +1,3 @@
+*.js linguist-language=objective-c
+*.css linguist-language=objective-c
+*.html linguist-language=objective-c
