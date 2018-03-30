@@ -35,7 +35,7 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 - 打开工程 WYMusic/WYMusic.xcodeproj 
 - 选择证书：Targets-General-Signing
 - 选择设备(不可选择模拟器，且仅支持64位设备)运行。
-- 如果下载收费歌曲，需要在播放页面先听再下载，[wiki](https://github.com/sunweiliang/NeteaseMusicCrack/wiki)里面有讲原因。
+- 下载收费歌曲，必须在播放页面先听再下载，如果之前有下载失败的歌曲，需要先删除听一首其它的歌曲[wiki](https://github.com/sunweiliang/NeteaseMusicCrack/wiki)里面有讲原因。
 
 
 ## 版权及免责声明
@@ -55,7 +55,7 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 
 
 
-![img01](./resources/img01.jpeg)
+![img02](./resources/img02.gif)
 
 
 
