@@ -32,7 +32,7 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 
 #### 2、运行工程
 
-- 由于包名冲突，需先删除网易云app。
+- 由于包名冲突，需先删除测试机网易云。
 - 打开工程 WYMusic/WYMusic.xcodeproj 
 - 选择证书：Targets-General-Signing
 - 选择设备(不可选择模拟器，且仅支持64位设备)运行。
