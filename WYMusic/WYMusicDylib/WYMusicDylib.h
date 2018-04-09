@@ -1,11 +1,9 @@
-//  weibo: http://weibo.com/xiaoqing28
-//  blog:  http://www.alonemonkey.com
 //
-//  WYMusicDylib.h
-//  WYMusicDylib
+//  网易云逆向，请勿用于商业用途
 //
-//  Created by iOS-dev on 2018/3/6.
-//  Copyright (c) 2018年 weiliang.sun. All rights reserved.
+//  Created by weiliang.sun
+//
+//  https://github.com/sunweiliang/NeteaseMusicCrack
 //
 
 #import <Foundation/Foundation.h>

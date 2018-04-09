@@ -1,18 +1,21 @@
 //
-//  CharacountForNotes8.h
-//  
+//  网易云逆向，请勿用于商业用途
 //
-//  Created by air on 16/10/9.
+//  Created by weiliang.sun
 //
+//  https://github.com/sunweiliang/NeteaseMusicCrack
 //
 
 #import <Foundation/Foundation.h>
 
+
 @interface NMSearchSongCell : UITableViewCell
 @end
 
+
 @interface NMAlbum : NSObject
 @end
+
 
 @interface NMSongFile : NSObject
 - (void)setCloudUrl:(NSString *)cloudUrl ;
@@ -78,7 +81,6 @@
 
 
 @interface NMSongUrlInfo : NSObject
-
 @property(retain, nonatomic) NSString *songId; // @synthesize songId=_songId;
 @property(retain, nonatomic) NSString *type; // @synthesize type=_type;
 @property(retain, nonatomic) NSString *url; // @synthesize url=_url;
@@ -121,13 +123,11 @@
 - (long long )urlInfoSource ;
 - (void)setUrlcode:(long long )urlcode ;
 - (long long )urlcode ;
-
 -(NSDictionary *)swl_mapPropertiesToDictionary;
-
 @end
 
-@interface NMSong : NSObject
 
+@interface NMSong : NSObject
 @property(retain, nonatomic) NSString *addtionName;
 @property(retain, nonatomic) NSArray *addtionNames;
 @property(retain, nonatomic) NSString *addtionPinyin;
@@ -346,6 +346,8 @@
 - (void)playSong:(id)arg1;
 @end
 
+
+
 @interface NMPlayViewController : UIViewController
 @property(retain, nonatomic) NMSong *currentShownSong;
 - (void)moreButtonClicked:(id)arg1;
@@ -369,7 +371,6 @@
 
 
 @interface NMNewDownloadManager : NSObject
-
 + (id)defaultManager ;
 + (id)downloadFailReason:(long long)arg1 ;
 + (void)executeBlockOnManagerThread:(int)arg1 ;
@@ -498,8 +499,10 @@
 - (NSString *)debugDescription ;
 - (NSString *)description ;
 -(NSDictionary *)swl_mapPropertiesToDictionary;
-
 @end
+
+
+
 
 
 @interface NMCopyRightChecker : NSObject
@@ -513,14 +516,11 @@
 + (long long)checkMVCopyrightOnly:(id)arg1 action:(unsigned long long)arg2;
 + (_Bool)isCopyrighted:(id)arg1 action:(unsigned long long)arg2;
 + (_Bool)isMVCopyrighted:(id)arg1 action:(unsigned long long)arg2;
-
 @end
 
 
 
 @interface NMAppDelegate : NSObject
-
-
 + (id)appDelegate;
 + (id)appMainViewController;
 + (id)appNavigationController;
@@ -707,31 +707,33 @@
 - (void)uploadIDFA;
 - (_Bool)validUniversalLink:(id)arg1;
 - (_Bool)validUrlScheme:(id)arg1;
-
 - (NSString *)debugDescription ;
 - (NSString *)description ;
-
 @end
+
+
 
 @interface NMAdBackgroundView : UIView
 - (_Bool)showAd:(_Bool)arg1;
 - (void)skipButtonClicked:(id)arg1;
 @end
 
+
+
 @interface NMAlreadyDownloadView : UIView
 - (void)scrollViewDidScroll:(id)arg1;
 - (void)tableReloadData;
 @end
 
+
+
 @interface NMPrivateCloudViewController : UIViewController
 - (void)viewDidAppear:(_Bool)arg1;
-
 @end
 
 
 
 @interface NMSqliteManager : NSObject
-
 + (id)appendantSqlitePath;
 + (id)defaultManager;
 + (id)generateLogErrorMsg:(id)arg1 userInfo:(id)arg2;

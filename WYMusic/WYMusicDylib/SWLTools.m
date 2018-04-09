@@ -1,9 +1,9 @@
 //
-//  SWLTools.m
-//  TestZero1
+//  网易云逆向，请勿用于商业用途
 //
-//  Created by iOS-dev on 2017/12/20.
-//  Copyright © 2017年 weiliang.sun. All rights reserved.
+//  Created by weiliang.sun
+//
+//  https://github.com/sunweiliang/NeteaseMusicCrack
 //
 
 #import "SWLTools.h"

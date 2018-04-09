@@ -1,11 +1,9 @@
-//  weibo: http://weibo.com/xiaoqing28
-//  blog:  http://www.alonemonkey.com
 //
-//  WYMusicDylib.m
-//  WYMusicDylib
+//  网易云逆向，请勿用于商业用途
 //
-//  Created by iOS-dev on 2018/3/6.
-//  Copyright (c) 2018年 weiliang.sun. All rights reserved.
+//  Created by weiliang.sun
+//
+//  https://github.com/sunweiliang/NeteaseMusicCrack
 //
 
 #import "WYMusicDylib.h"
@@ -29,10 +27,12 @@ static __attribute__((constructor)) void entry(){
 
 
 
+#pragma mark - 代码开始，上面的不用管...
 
+#pragma mark - NMSong
 CHDeclareClass(NMSong)
 
-static const char * SWL_NeedMakeMonny = "SWL_NeedMakeMonny";
+static const char * SWL_NeedMakeMoney = "SWL_NeedMakeMoney";
 static bool swlhasNullMusicURL;
 
 CHDeclareMethod(1,void, NMSong,swl_updatesavedownload_downloadinfo, NMSongUrlInfo *,playUrlInfo){
@@ -64,10 +64,10 @@ CHDeclareMethod(0,NSDictionary *, NMSong,swl_mapPropertiesToDictionary){
 }
 
 CHDeclareMethod(1,void, NMSong,setSwlMakeMoney,BOOL,sender){
-    objc_setAssociatedObject(self, SWL_NeedMakeMonny, @(sender), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, SWL_NeedMakeMoney, @(sender), OBJC_ASSOCIATION_ASSIGN);
 }
 CHDeclareMethod(0,BOOL, NMSong,swlMakeMoney){
-    BOOL r = [objc_getAssociatedObject(self, SWL_NeedMakeMonny) boolValue];
+    BOOL r = [objc_getAssociatedObject(self, SWL_NeedMakeMoney) boolValue];
     return r;
 }
 
@@ -135,7 +135,7 @@ CHOptimizedMethod(0, self, NMSongUrlInfo *, NMSong,downloadUrlInfo){
     
     if([self swlMakeMoney]){
         NMSongUrlInfo *swl_play = [self playUrlInfo];
-        NSLog(@"swl_swlisneedmakemonny = %@", swl_play);
+        NSLog(@"swl_swlisneedmakemoney = %@", swl_play);
         return swl_play;
     }
     
@@ -168,6 +168,7 @@ CHOptimizedMethod(0, self, NSString *, NMSong,debugDescription){
 }
 
 
+#pragma mark - NMSongUrlInfo
 CHDeclareClass(NMSongUrlInfo)
 CHOptimizedMethod(0, self, long long, NMSongUrlInfo,fee){
     return 0;
@@ -180,46 +181,51 @@ CHOptimizedMethod(0, self, long long, NMSongUrlInfo,urlcode){
 }
 
 
+#pragma mark - NMPlayViewController
 CHDeclareClass(NMPlayViewController)
-static bool swlRequestRealyMusicURL;
+//static bool swlRequestRealyMusicURL;
 static NSString *swlRealyMusicURL;
 
 CHOptimizedMethod(1, self, void, NMPlayViewController,playPauseNotification,NSNotification *,arg1){
-    //NMPlayer *swl_mpplayer = [(NSNotification *)arg1 object];
     
     CHSuper(1, NMPlayViewController, playPauseNotification,arg1);
     
-    
-    return;
-    
 }
+
 
 #pragma mark - NMAppDelegate
 CHDeclareClass(NMAppDelegate)
 CHOptimizedMethod(2, self, void, NMAppDelegate,adBackgroundView,id,arg1,tappedWithUrl,id,arg2){
-    
+    //去广告
 }
 CHOptimizedMethod(1, self, void, NMAppDelegate,adBackgroundViewSkipAd,id,arg1){
-    
+    //去广告
 }
 CHOptimizedMethod(1, self, void, NMAppDelegate,buyVipDidShow,id,arg1){
-    
+    //去Vip页面
 }
 CHOptimizedMethod(1, self, BOOL, NMAppDelegate,checkUpdate,id,arg1){
+    //去更新检测
     return NO;
 }
 CHOptimizedMethod(1, self, void, NMAppDelegate,checkVersion,BOOL,arg1){
+    //去更新检测
 }
 CHOptimizedMethod(0, self, void, NMAppDelegate,doCheckVersion){
+    //去更新检测
 }
 CHOptimizedMethod(0, self, BOOL, NMAppDelegate,isLimitedVersion){
+    //去更新检测
     return NO;
 }
 CHOptimizedMethod(0, self, void, NMAppDelegate,showAdvertisementIfNeeded){
+    //去开屏广告
 }
 CHOptimizedMethod(0, self, void, NMAppDelegate,checkPushNotification){
+    //去通知检测
 }
 CHOptimizedMethod(0, self, void, NMAppDelegate,uploadIDFA){
+    //去上传idfa
 }
 
 
@@ -227,6 +233,7 @@ CHOptimizedMethod(0, self, void, NMAppDelegate,uploadIDFA){
 #pragma mark - NMAdBackgroundView
 CHDeclareClass(NMAdBackgroundView)
 CHOptimizedMethod(1, self, BOOL, NMAdBackgroundView,showAd,BOOL,arg12){
+    //去广告
     return NO;
 }
 CHOptimizedMethod(1, self, BOOL, NMAdBackgroundView,skipButtonClicked,id,arg12){
@@ -235,26 +242,22 @@ CHOptimizedMethod(1, self, BOOL, NMAdBackgroundView,skipButtonClicked,id,arg12){
 
 
 
-#pragma mark -
+#pragma mark - 入口点
 CHConstructor{
     CHLoadLateClass(NMSong);
     CHClassHook(1, NMSong, setCanDownloadMusic);
     CHClassHook(0, NMSong, canDownloadMusic);
     CHClassHook(0, NMSong, canEnableMusic);
-    
     CHClassHook(0, NMSong, canPlayLocally);
-    
     CHClassHook(0, NMSong, canPlayMusic);
     CHClassHook(1, NMSong, setIsFeeSong);
     CHClassHook(0, NMSong, isFeeSong);
     CHClassHook(0, NMSong, isFeeSongPaid);
     CHClassHook(0, NMSong, isPlayOnlySong);
-    
     CHClassHook(1, NMSong, setDownloadUrlInfo);
     CHClassHook(0, NMSong, downloadUrlInfo);
     CHClassHook(1, NMSong, setPlayUrlInfo);
     CHClassHook(0, NMSong, playUrlInfo);
-    
     CHClassHook(0, NMSong, description);
     CHClassHook(0, NMSong, debugDescription);
     
@@ -264,8 +267,10 @@ CHConstructor{
     CHClassHook(0, NMSongUrlInfo, isFeeSong);
     CHClassHook(0, NMSongUrlInfo, urlcode);
     
+    
     CHLoadLateClass(NMPlayViewController);
     CHClassHook(1, NMPlayViewController, playPauseNotification);
+    
     
     CHLoadLateClass(NMAppDelegate);
     CHClassHook(2, NMAppDelegate, adBackgroundView,tappedWithUrl);
